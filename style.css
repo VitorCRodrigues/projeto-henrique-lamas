@@ -2,13 +2,16 @@
 
 body{
     margin: 0;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to bottom,
     #FFA76A,   
     #B573D1,   
-    #5C3D91,  
+    #8662c4,  
     #1A1A50   
   );
+   font-family: 'Poppins', sans-serif;
+   color: whitesmoke;
+   text-align: justify;
 
 }
 
@@ -17,6 +20,10 @@ header {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    margin-top: -61px;
 }
 
 .navbar {
@@ -26,4 +33,230 @@ header {
 .texto{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+}
+
+.coluna-texto h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+    }
+
+.secao-principal {
+    max-width: 1440px;
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+.imagem-coluna,
+.imagem-coluna2 {
+    flex: 1 1 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+} 
+
+ .button-contato {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.button-contato button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.button-contato span {  
+    font-size: 16px;
+    max-width: 220px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.margem-lateral {
+      flex: 0 0 165px;
+      height: auto;
+}
+
+.coluna-texto {
+      flex: 1 1 445px;
+      padding-top: 32px;
+}
+
+.imagem-coluna img {
+    max-width: 100%;
+    min-width: 300px;   
+    height: auto;
+    border-radius: 2000px;
+}
+
+.imagem-coluna2 img {
+    max-width: 70%;
+    min-width: 210px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.corte-biografia {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+}
+
+.coluna-biografia {
+    flex: 0 0 445px;
+    padding-top: 32px;
+}
+
+.coluna-biografia h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+.coluna-biografia p {
+    list-style-type: none;
+    padding-left: 20px;
+    width: 75%;
+    margin: 0px;
+    padding: 0px;
+}
+.curiosidades {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 100px;  
+}
+
+.curiosidades > div {
+    width: 30%;
+    background-color: #f0f0f0; 
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#curiosidade1 {
+    margin-left: 20px;
+}
+
+.descricao-livro {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.cards-livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+.card-livro {
+    flex: 1 1 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-livro:hover {
+    transform: translateY(-10px);
+}
+
+.card-conteudo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-conteudo p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #B573D1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #8662c4;
+}
+
+.secao-duvidas {
+    margin: 100px 0;
+    color: white;
+}
+
+.subtitulo-duvidas {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.lista-duvidas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.duvida-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.duvida-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.duvida-item p {
+    line-height: 1.6;
+}
+
+.citacao-final {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.texto-citacao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.citacao-texto {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.citacao-autor {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
 }
