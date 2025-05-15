@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 140px;
+}
+
 body{
     margin: 0;
     height: 100%;
@@ -162,9 +167,6 @@ header {
     transform: translateY(-10px);
 }
 
-#container-curiosidade {
-     
-}
 
 .card-curiosidade {
     background-color: #B573D1;
