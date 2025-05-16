@@ -24,9 +24,10 @@ header {
     display: flex;
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin: -61px 0px 0px 0px;
     display: inline-block;
     width: 100%;
+    position: fixed;
 }
 
 .navbar {
@@ -59,7 +60,7 @@ header {
 
 .coluna-texto h1 {
     font-size: 32px;
-    font-weight: bolder;
+    font-weight: bold;
     margin-bottom: 24px;
     }
 
@@ -205,8 +206,32 @@ header {
     transition: background-color 0.3s;
 }
 
+#bttn-contato {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+#bttn-contato:hover {
+    background-color: transparent;
+    color: white;
+}
+
 .btn-download:hover {
     background-color: #8662c4;
+}
+
+.btn-custom {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: white;
 }
 
 .secao-duvidas {
@@ -286,7 +311,11 @@ header {
 }
 
 .footer-logo {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
 }
 
 .footer-links {
@@ -295,12 +324,19 @@ header {
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
+
+    align-items: center; 
 }
 
 .footer-column {
     flex: 1;
     min-width: 200px;
     text-align: center;
+}
+
+.footer-logo img {
+    vertical-align: middle; 
+    display: inline-block; 
 }
 
 .footer-column h4 {
@@ -317,4 +353,48 @@ header {
 .footer-column li {
     margin-bottom: 8px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1055;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-overlay.active {
+    opacity: 1;
+}
+
+.custom-popup {
+    background-color: #42a54f;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#link-instagram {
+    color: white;
+
+}
+
+#link-amazon {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
 }
