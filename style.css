@@ -24,7 +24,7 @@ header {
     display: flex;
     text-align: center;
     padding: 0px;
-    margin: -61px 0px 0px 0px;
+    margin: -100px 0px 0px 0px;
     display: inline-block;
     width: 100%;
     position: fixed;
@@ -67,7 +67,7 @@ header {
 .secao-principal {
      max-width: 1440px;
      width: 100%;
-     margin: 60px auto;
+     margin: 100px auto;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -357,6 +357,7 @@ header {
 
 .custom-overlay {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
