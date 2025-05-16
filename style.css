@@ -104,8 +104,11 @@ header {
 
 .coluna-biografia {
     flex: 0 0 445px;
-    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .coluna-biografia h2 {
     font-size: 20px;
@@ -263,5 +266,55 @@ header {
 
 .citacao-autor {
     font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-container {
+    background-color: #1A1A50;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
     color: rgba(255, 255, 255, 0.8);
 }
