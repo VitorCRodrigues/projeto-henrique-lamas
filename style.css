@@ -271,6 +271,18 @@ header {
     gap: 30px;
 }
 
+.lista-duvidas .btn-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+
+.lista-duvidas .collapse {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
 .duvida-item {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
