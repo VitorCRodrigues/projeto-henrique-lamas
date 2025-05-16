@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth; 
-    scroll-padding-top: 140px;
+    scroll-padding-top: 150px;
 }
 
 body{
@@ -28,6 +28,7 @@ header {
     display: inline-block;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 .navbar {
@@ -233,6 +234,25 @@ header {
   background-color: transparent;
   color: white;
 }
+
+#carouselPrevia {
+    margin: 40px 0;
+}
+
+.carousel-indicators button {
+    background-color: #B573D1 !important; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #B573D1;
+    border-radius: 50%;
+    padding: 10px;
+}
+
 
 .secao-duvidas {
     margin: 100px 0;
