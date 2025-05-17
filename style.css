@@ -105,7 +105,7 @@ header {
 }
 
 .coluna-biografia {
-    flex: 0 0 445px;
+    flex: 0 0 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
