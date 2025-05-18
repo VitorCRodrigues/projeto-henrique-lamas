@@ -77,6 +77,10 @@ header {
   flex: 0 0 20px;
 }
 
+#biografia{
+  margin-bottom: 50px;
+}
+
 .corte-biografia, .descricao-livro {
   width: 100%;
   padding: 2rem 1rem;
@@ -120,14 +124,18 @@ header {
 .card-curiosidade {
     width: 100%;
     background-color: var(--color-primary);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .card-curiosidade:hover {
   transform: translateY(-5px);
+}
+
+#primeiro-livro{
+  margin-top: 60px;
 }
 
 #previas {
@@ -359,6 +367,10 @@ header {
         display: block;
         flex: 0 0 100px;
     }
+
+    #biografia{
+      margin-bottom: 80px;
+    }
     
     .corte-biografia, .descricao-livro {
         max-width: 1200px;
@@ -367,6 +379,10 @@ header {
     
     .card-curiosidade {
         width: calc(33.333% - 1rem);
+    }
+
+    #primeiro-livro{
+      margin-top: 80px;
     }
 
     #previas {
