@@ -68,7 +68,7 @@ header {
 }
 
 #foto-lamas img {
-  width: 80%;
+  width: 60%;
   max-width: 350px;
   height: auto;
   border-radius: 20px;
@@ -176,7 +176,7 @@ header {
 .subtitulo-duvidas {
     font-size: 1.1rem;
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .lista-duvidas {
