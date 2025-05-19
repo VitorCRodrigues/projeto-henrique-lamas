@@ -38,6 +38,8 @@ header {
 
 .navbar-brand {
   font-weight: bold;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .navbar-toggler {
@@ -359,54 +361,93 @@ header {
 /*Desktop */
 @media (min-width: 992px) {
     .secao-principal {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 10rem 2rem 5rem;
-    }
-    
-    .margem-lateral {
-        display: block;
-        flex: 0 0 100px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 2rem 5rem;
+    gap: 2rem;
+  }
 
-    #biografia{
-      margin-bottom: 80px;
-    }
-    
-    .corte-biografia, .descricao-livro {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .card-curiosidade {
-        width: calc(33.333% - 1rem);
-    }
+  .secao-principal .coluna {
+    flex: 1;
+  }
 
-    #primeiro-livro{
-      margin-top: 80px;
-    }
+  #texto-lamas {
+    max-width: 600px;
+  }
 
-    #previas {
-        margin-top: 60px;
-    }
+  #foto-lamas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #foto-lamas img {
+    max-width: 100%;
+    height: auto;
+  }
     
-    #carouselPrevia {
-        margin: 60px 0;
-    }
+  .margem-lateral {
+    display: block;
+    flex: 0 0 100px;
+  }
+
+  #biografia{
+    margin-bottom: 80px;
+  }
+
+  .corte-biografia {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagem-coluna2 {
+    transform: translateX(-80px); 
+  }
+
+  .coluna-biografia {
+    transform: translateX(-50px); 
+  }
+
+  .imagem-coluna2,
+  .coluna-biografia {
+    flex: 1;
+  }
     
-    #duvidas {
-        margin-top: 80px;
-    }
+  .corte-biografia, .descricao-livro {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
   
-    .footer-content {
-        max-width: 1200px;
-    }
+  .card-curiosidade {
+      width: calc(33.333% - 1rem);
+  }
 
-    .footer-logo img {
-        width: 160px;
-        height: 160px;
-    }
+  #primeiro-livro{
+    margin-top: 80px;
+  }
 
+  #previas {
+      margin-top: 60px;
+  }
+  
+  #carouselPrevia {
+      margin: 60px 0;
+  }
+  
+  #duvidas {
+      margin-top: 80px;
+  }
+
+  .footer-content {
+      max-width: 1200px;
+  }
+
+  .footer-logo img {
+      width: 160px;
+      height: 160px;
+  }
 }
 
 h1 {
