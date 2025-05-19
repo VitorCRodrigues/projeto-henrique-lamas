@@ -99,14 +99,17 @@ header {
 }
 
 .imagem-coluna2 img {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
   border-radius: 20px;
 }
 
 .coluna-biografia {
+  max-width: 800px;
   width: 100%;
-  padding: 0 1rem;
+  text-align: center;
+
 }
 
 .coluna-biografia h2 {
@@ -399,15 +402,19 @@ header {
 
   .corte-biografia {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 32px;
+    padding: 40px 20px; 
   }
 
   .imagem-coluna2 {
-    transform: translateX(-80px); 
+    transform: translateX(-1px); 
   }
 
   .coluna-biografia {
-    transform: translateX(-50px); 
+    transform: translateX(-1px); 
+    text-align: justify;
   }
 
   .imagem-coluna2,
@@ -451,16 +458,18 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.75rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.5rem;
+  font-style: italic;
 }
 
 p {
