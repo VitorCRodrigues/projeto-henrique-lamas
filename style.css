@@ -126,11 +126,16 @@ header {
   gap: 1.5rem;
 }
 
+.card-curiosidade h6 {
+    text-align: center;
+
+}
+
 .card-curiosidade {
-    width: 100%;
+    width: 80%;
     background-color: white;
     color: black;
-    padding: 1.5rem;
+    padding: 3.0rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(226, 224, 224, 0.1);
     transition: transform 0.3s ease;
