@@ -125,9 +125,17 @@ header {
     margin: 2rem 0;
 }
 
-.card-curiosidade h6 {
-    text-align: center;
+.curiosidades * {
+  text-align: left !important;
+}
 
+.card-curiosidade h6 {
+  text-align: left;
+  word-spacing: 0;
+  letter-spacing: 0;
+  white-space: normal;
+  line-height: 1.4;
+  hyphens: none;
 }
 
 .card-curiosidade {
@@ -194,6 +202,7 @@ header {
 
 .card-livro {
     width: 90%;
+    min-height: 400px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -226,6 +235,13 @@ header {
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     border-radius: 10px;
+}
+
+.duvida-item .collapse {
+    margin-left: 1%; /* Deslocamento para direita */
+    padding-right: 1rem;
+    border-left: 2px solid var(--color-primary); /* Linha decorativa opcional */
+    padding-left: 1.5rem;
 }
 
 .lista-duvidas .btn-link {
@@ -462,6 +478,11 @@ header {
       margin: 0 auto;
   }
   
+  .container h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
   .curiosidades {
       min-height: 600px;
       padding: 3rem;
@@ -469,7 +490,7 @@ header {
   
   .card-curiosidade {
       width: 280px;
-       min-height: 300px;
+      min-height: 350px;
       padding: 2rem;
   }
   
