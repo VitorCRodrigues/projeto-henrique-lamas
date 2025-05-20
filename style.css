@@ -119,11 +119,10 @@ header {
 }
 
 .curiosidades {
-  width: 100%;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    position: relative;
+    min-height: 500px;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
 }
 
 .card-curiosidade h6 {
@@ -132,13 +131,43 @@ header {
 }
 
 .card-curiosidade {
-    width: 80%;
-    background-color: white;
+    background: white;
     color: black;
-    padding: 3.0rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(226, 224, 224, 0.1);
-    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 85%;
+    position: absolute;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #f0f0f0;
+    transition: all 0.4s ease-out;
+}
+
+.card-curiosidade:nth-child(1) { 
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.card-curiosidade:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 90%;
+}
+
+.card-curiosidade:nth-child(2):hover {
+  transform: translate(-50%, -55%);
+}
+
+.card-curiosidade:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .card-curiosidade:hover {
@@ -433,9 +462,37 @@ header {
       margin: 0 auto;
   }
   
-  .card-curiosidade {
-      width: calc(33.333% - 1rem);
+  .curiosidades {
+      min-height: 600px;
+      padding: 3rem;
   }
+  
+  .card-curiosidade {
+      width: 280px;
+       min-height: 300px;
+      padding: 2rem;
+  }
+  
+  .card-curiosidade:nth-child(1) { 
+      top: 0;
+      left: 5%;
+      right: auto;
+  }
+  
+  .card-curiosidade:nth-child(2) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+  }
+  
+  .card-curiosidade:nth-child(3) { 
+      bottom: 0;
+      left: auto;
+      right: 5%;
+  }
+
+  
 
   #primeiro-livro{
     margin-top: 80px;
@@ -513,4 +570,17 @@ a, button {
   border-radius: 10px;
   max-width: 90%;
   text-align: center;
+}
+
+.card-curiosidade h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-curiosidade p {
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
