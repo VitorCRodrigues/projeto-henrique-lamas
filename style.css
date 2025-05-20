@@ -212,6 +212,7 @@ header {
 .citacao-texto {
     font-size: 1.8rem;
     font-style: italic;
+    font-weight: bold;
     line-height: 1.5;
     color: white;
     margin-bottom: 15px;
