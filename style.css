@@ -126,7 +126,7 @@ header {
 }
 
 .curiosidades * {
-  text-align: left !important;
+  text-align: justify !important;
 }
 
 .card-curiosidade h6 {
