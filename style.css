@@ -389,6 +389,7 @@ header {
   .curiosidades {
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 2rem;
   }
   
   .card-curiosidade {
