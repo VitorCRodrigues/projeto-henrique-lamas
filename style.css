@@ -476,6 +476,7 @@ header {
   .corte-biografia, .descricao-livro {
       max-width: 1200px;
       margin: 0 auto;
+      gap: 3rem;
   }
   
   .container h2{
