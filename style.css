@@ -138,6 +138,10 @@ header {
   hyphens: none;
 }
 
+.curiosidades * {
+  text-align: left !important;
+}
+
 .card-curiosidade {
     background: white;
     color: black;
