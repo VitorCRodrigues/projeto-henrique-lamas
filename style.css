@@ -130,7 +130,7 @@ header {
 }
 
 .card-curiosidade h6 {
-  text-align: left;
+  text-align: center;
   word-spacing: 0;
   letter-spacing: 0;
   white-space: normal;
@@ -139,7 +139,7 @@ header {
 }
 
 .curiosidades * {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .card-curiosidade {
