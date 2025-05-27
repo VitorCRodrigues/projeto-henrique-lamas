@@ -119,15 +119,17 @@ header {
   text-align: center;
 }
 
+#curiosidades {
+  position: relative;
+  min-height: 1000px; 
+  padding-bottom: 100px;
+}
+
 .curiosidades {
     position: relative;
     min-height: 500px;
     padding: 2rem 1rem;
     margin: 2rem 0;
-}
-
-.curiosidades * {
-  text-align: justify !important;
 }
 
 .card-curiosidade h6 {
@@ -157,20 +159,22 @@ header {
     justify-content: flex-start;
     border: 1px solid #f0f0f0;
     transition: all 0.4s ease-out;
+    transform: translateY(0);
 }
 
-.card-curiosidade:nth-child(1) { 
-    top: 0;
-    right: 0;
-    z-index: 1;
+.card-curiosidade:hover {
+  transform: translateY(-5px);
+}
+
+.card-curiosidade:nth-child(1) {
+  top: 0;
+  left: 5%;
 }
 
 .card-curiosidade:nth-child(2) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    width: 90%;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-curiosidade:nth-child(2):hover {
@@ -178,13 +182,33 @@ header {
 }
 
 .card-curiosidade:nth-child(3) {
-    bottom: 0;
-    left: 0;
-    z-index: 2;
+  top: 400px;
+  right: 5%;
 }
 
-.card-curiosidade:hover {
+.card-curiosidade:nth-child(4) {
+  top: 600px; 
+  right: 15%; 
+  transform: none;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.card-curiosidade:nth-child(5) {
+  top: 800px;
+  left: 15%; 
+  transform: none;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.card-curiosidade:nth-child(4):hover,
+.card-curiosidade:nth-child(5):hover {
   transform: translateY(-5px);
+  background-color: #111111;
+  box-shadow: 0 6px 20px rgba(255,255,255,0.1);
 }
 
 #primeiro-livro{
@@ -490,6 +514,10 @@ header {
     margin-bottom: 30px;
   }
 
+  #curiosidades {
+    min-height: 1200px;
+  }
+
   .curiosidades {
       min-height: 600px;
       padding: 3rem;
@@ -520,7 +548,15 @@ header {
       right: 5%;
   }
 
+  .card-curiosidade:nth-child(4) {
+    top: 650px;
+    right: 20%;
+  }
   
+  .card-curiosidade:nth-child(5) {
+    top: 800px;
+    left: 20%;
+  }
 
   #primeiro-livro{
     margin-top: 80px;
@@ -1035,7 +1071,7 @@ header {
 
 /*Desktop */
 @media (min-width: 992px) {
-    .secao-principal {
+  .secao-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1105,6 +1141,11 @@ header {
     margin-bottom: 60px;
   }
 
+  #curiosidades {
+      min-height: 1350px; 
+      position: relative;
+  }
+
   .curiosidades {
       min-height: 600px;
       padding: 3rem;
@@ -1135,7 +1176,25 @@ header {
       right: 5%;
   }
 
-  
+  .card-curiosidade:nth-child(4) {
+      top: 700px !important; 
+      right: 38% !important; 
+      left: auto !important;
+      transform: none !important;
+  }
+
+  .card-curiosidade:nth-child(5) {
+      top: 900px !important; 
+      right: 73% !important; 
+      left: auto !important;
+      transform: none !important;
+  }
+
+  .card-curiosidade:nth-child(4),
+  .card-curiosidade:nth-child(5) {
+      width: 300px; 
+      max-width: none;
+  }
 
   #primeiro-livro{
     margin-top: 80px;
