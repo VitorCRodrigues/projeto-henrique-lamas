@@ -168,7 +168,11 @@ header {
 
 .card-curiosidade:nth-child(1) {
   top: 0;
-  left: 5%;
+  left: 5%;  
+  background-color: #4B2E83;
+  border: 1px solid #4B2E83;
+  color: rgb(255, 255, 255);
+
 }
 
 .card-curiosidade:nth-child(2) {
@@ -193,8 +197,8 @@ header {
   top: 600px; 
   right: 15%;
   transform: none;
-  background-color: #4B2E83; 
-  color: #ffffff;
+  background-color: #ffffff; 
+  color: #000000;
   border: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -1303,6 +1307,14 @@ a, button {
     margin-bottom: 1rem; 
     box-sizing: border-box;
     padding-left: 1rem;
+}
+
+#titulo-livro-tudo-aquilo {
+    font-size: 1.5rem
+}
+
+#titulo-livro-pescador-lunar {
+    font-size: 1.5rem
 }
 
 @media (min-width: 992px) {
