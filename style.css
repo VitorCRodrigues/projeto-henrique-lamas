@@ -46,6 +46,10 @@ header {
   border-color: rgba(255,255,255,0.1);
 }
 
+.titulo-principal{
+  font-weight: bold;
+}
+
 .secao-principal {
   width: 100%;
   padding: 6rem 1rem 2rem; 
@@ -121,7 +125,7 @@ header {
 
 #curiosidades {
   position: relative;
-  min-height: 1000px; 
+  min-height: 1080px; 
   padding-bottom: 100px;
 }
 
@@ -186,11 +190,12 @@ header {
 }
 
 .card-curiosidade:nth-child(3) {
-  top: 400px;
+  top: 350px;
   background-color: #4B2E83;
   color: #ffffff;
   border: 1px solid rgba(255,255,255,0.2);
   right: 5%;
+  min-height: 200px !important;
 }
 
 .card-curiosidade:nth-child(4) {
@@ -203,7 +208,7 @@ header {
 }
 
 .card-curiosidade:nth-child(5) {
-  top: 800px;
+  top: 780px;
   left: 15%;
   transform: none;
   background-color: #4B2E83; 
@@ -211,7 +216,12 @@ header {
   border: 1px solid rgba(255,255,255,0.2);
 }
 
-.card-curiosidade:nth-child(4):hover,
+.card-curiosidade:nth-child(4):hover{
+  transform: translateY(-5px);
+  background-color: #d3d3d3; 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
 .card-curiosidade:nth-child(5):hover {
   transform: translateY(-5px);
   background-color: #3C1E6E; 
@@ -1181,6 +1191,8 @@ header {
       bottom: 0;
       left: auto;
       right: 5%;
+      min-height: 300px !important;
+      width: 300px !important;
   }
 
   .card-curiosidade:nth-child(4) {
@@ -1227,6 +1239,34 @@ header {
       width: 160px;
       height: 160px;
   }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 3.0rem;
+  }
+  .card-curiosidade:nth-child(1) {
+    top: 0;
+    left: 5%;  
+  }
+
+  .card-curiosidade:nth-child(2) {
+    top: 250px;
+    left: 48%;
+  }
+
+  .card-curiosidade:nth-child(3) {
+    left: 5%;
+  }
+
+  .card-curiosidade:nth-child(4) {
+    right: 10%;
+  }
+
+  .card-curiosidade:nth-child(5) {
+    left: 5%;
+  }
+
 }
 
 h1 {
