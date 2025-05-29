@@ -1378,7 +1378,7 @@ a, button {
     }
 }
 
-.corte-biografia, .descricao-livros-finais {
+.descricao-livros-finais {
   width: 100%;
   padding: 2rem 1rem;
   display: flex;
@@ -1387,18 +1387,18 @@ a, button {
   gap: 2rem;
 }
 
-.corte-biografia, .descricao-livros-finais {
+.descricao-livros-finais {
   flex-direction: row;
   padding: 3rem 2rem;
 }
 
-.corte-biografia, .descricao-livros-finais {
+.descricao-livros-finais {
       max-width: 1200px;
       margin: 0 auto;
       gap: 3rem;
   }
 
-  .corte-biografia, .descricao-livros-finais {
+ .descricao-livros-finais {
   width: 100%;
   padding: 2rem 1rem;
   display: flex;
@@ -1407,7 +1407,7 @@ a, button {
   gap: 2rem;
 }
 
-.corte-biografia, .descricao-livros-finais {
+.descricao-livros-finais {
       flex-direction: row;
       padding: 3rem 2rem;
 }
