@@ -1266,6 +1266,9 @@ header {
   .card-curiosidade:nth-child(5) {
     left: 5%;
   }
+  .card-livro {
+    min-height: 650px;
+}
 
 }
 
