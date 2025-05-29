@@ -1371,4 +1371,49 @@ a, button {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    .descricao-livros-finais {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.corte-biografia, .descricao-livros-finais {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.corte-biografia, .descricao-livros-finais {
+  flex-direction: row;
+  padding: 3rem 2rem;
+}
+
+.corte-biografia, .descricao-livros-finais {
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 3rem;
+  }
+
+  .corte-biografia, .descricao-livros-finais {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.corte-biografia, .descricao-livros-finais {
+      flex-direction: row;
+      padding: 3rem 2rem;
+}
+
+.corte-biografia, .descricao-livros-finais {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
 }
