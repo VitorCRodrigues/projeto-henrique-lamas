@@ -1112,6 +1112,7 @@ header {
   }
 
   #foto-lamas img {
+    width: 80%;
     max-width: 100%;
     height: auto;
   }
@@ -1247,6 +1248,11 @@ header {
   .titulo-principal {
     font-size: 3.0rem;
   }
+
+  .imagem-coluna2 img {
+    max-width: 350px !important;
+  }
+
   .card-curiosidade:nth-child(1) {
     top: 0;
     left: 5%;  
