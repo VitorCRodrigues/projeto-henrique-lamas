@@ -1437,7 +1437,7 @@ A partir daqui foi o CHAT
 
 .coluna-biografia, .imagem-coluna2 {
   flex: 1 1 300px; /* Flexível, com largura mínima de 300px */
-  max-width: 600px;
+  max-width: 900px;
   box-sizing: border-box;
 }
 
