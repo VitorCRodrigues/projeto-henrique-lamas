@@ -1123,7 +1123,7 @@ header {
   }
 
   #biografia{
-    margin-bottom: 80px;
+    margin-bottom: 0px !important;
   }
 
   .corte-biografia {
