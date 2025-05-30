@@ -494,10 +494,13 @@ header {
   }
 
   #foto-lamas img {
-    max-width: 100%;
+    max-width: 50% !important;
     height: auto;
+    max-width: 300px !important;
+    margin-top: 60px !important;
   }
-    
+
+   
   .margem-lateral {
     display: block;
     flex: 0 0 100px;
