@@ -442,6 +442,13 @@ header {
         width: calc(50% - 1rem);
   }
 
+  .card-curiosidade:nth-child(2) {
+      top: 50%;
+      left: 62% !important;
+      transform: translate(-50%, -50%);
+      width: 300px !important;
+  }
+
   .card-livro {
     min-height: 450px !important;
   }
