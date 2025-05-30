@@ -1276,7 +1276,26 @@ header {
   }
   .card-livro {
     min-height: 650px;
-}
+  }
+  .descricao-livros-finais {
+    flex-direction: column !important;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .descricao-livros-finais:nth-of-type(2) {
+    flex-direction: column-reverse !important;
+  }
+
+  .coluna-biografia, .imagem-coluna2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .imagem-coluna2 img {
+    max-width: 300px; 
+  }
 
 }
 
