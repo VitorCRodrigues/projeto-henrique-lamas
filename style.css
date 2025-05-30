@@ -1051,6 +1051,11 @@ header {
         padding: 8rem 2rem 4rem;
         text-align: justify !important;
   }
+
+  #foto-lamas img {
+    width: 80%;
+    max-width: 350px;
+  }
   
   #texto-lamas {
         text-align: justify !important;
