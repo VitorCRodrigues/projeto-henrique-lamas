@@ -441,6 +441,10 @@ header {
   .card-curiosidade {
         width: calc(50% - 1rem);
   }
+
+  .card-livro {
+    min-height: 450px !important;
+  }
   
   .footer-links {
         flex-direction: row;
